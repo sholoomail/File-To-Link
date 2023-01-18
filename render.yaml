@@ -1,0 +1,32 @@
+services:
+  # A background worker that consumes a queue
+  - type: worker
+    name: Filestreambot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m Adarsh
+    repo: https://github.com/sholoomail/File-To-Link.git
+    branch: main
+    envVars:
+      - key: BOT_TOKEN 
+        sync: false
+      - key: API_ID 
+        sync: false
+      - key: API_HASH 
+        sync: false
+      - key: APP_NAME 
+        value: Filestreambot
+      - key: BIN_CHANNEL 
+        sync: false
+      - key: DATABASE_URL 
+        sync: false
+      - key: OWNER_ID 
+        sync: false
+      - key: OWNER_USERNAME 
+        sync: false
+      - key: HAS_SSL 
+        value: True
+      - key: OWNER_USERNAME 
+        sync: false
+      - key: ENV 
+        value: True
