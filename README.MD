@@ -44,6 +44,13 @@ login - to login if it's password protected
 
 ## How to make your own
 
+### Deploy To Render (Paid)
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?)
+
+
+
+
 Either you could locally host or deploy on [Heroku](https://heroku.com)
 
 ### Deploy on Heroku
