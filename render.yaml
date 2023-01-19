@@ -1,6 +1,5 @@
 services:
-  # A background worker that consumes a queue
-  - type: worker
+  - type: web
     name: Filestreambot
     env: python
     buildCommand: pip install -r requirements.txt
