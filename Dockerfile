@@ -1,8 +1,5 @@
-FROM archlinux:latest
-
-RUN pip3 install -U pip
-RUN mkdir /app/
-WORKDIR /app/
+FROM python:3.9.16-slim-buster
+WORKDIR /app
 COPY . /app/
-RUN pip3 install -U -r requirements.txt
-CMD bash -m Adarsh
+RUN pip install -r requirements.txt
+CMD ["bash", "start.sh"]
